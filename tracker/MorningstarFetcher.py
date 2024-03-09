@@ -18,7 +18,7 @@ class MorningstarFetcher:
             soup = BeautifulSoup(r.text, "html.parser")
             self.__html_sites[stock] = soup
 
-    def fetch_24h_change_rates(self):
+    def fetch_24h(self):
         print("Fetching 24h change rates...")
         change_rates = []
         for stock, name in self.__stocks.items():

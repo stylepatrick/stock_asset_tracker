@@ -20,7 +20,7 @@ stocks = {"F0GBR06PBI": "Fidelity - Emerging Market",
 def fetch_assets_type():
     fetcher = MorningstarFetcher(stocks)
     assets_type = {}
-    assets_type["24h"] = fetcher.fetch_24h_change_rates()
+    assets_type["24h"] = fetcher.fetch_24h()
     # assets_type["1 week"] = fetcher.fetch_1_week()
     assets_type["1 month"] = fetcher.fetch_1_month()
     # assets_type["3 month"] = fetcher.fetch_3_month()
